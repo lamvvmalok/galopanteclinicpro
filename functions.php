@@ -182,3 +182,13 @@ require get_template_directory() . '/tratamientos.php';
 }
 add_shortcode('tratamiento', 'tratamientos');
 
+// Deshabilitar caché de archivos estáticos en el frontend (cache busting)
+add_filter('script_loader_src', 'galopanteclinicpro_disable_cache', 9999);
+add_filter('style_loader_src', 'galopanteclinicpro_disable_cache', 9999);
+function galopanteclinicpro_disable_cache($src) {
+    if (strpos($src, home_url()) === 0) {
+        $src = add_query_arg('v', time(), $src);
+    }
+    return $src;
+}
+

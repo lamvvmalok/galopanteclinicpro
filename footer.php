@@ -49,7 +49,7 @@
                         <!-- Redes Sociales -->
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/clibauruguay/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fa-brands fa-youtube"></i></a>
                             <a class="btn btn-outline-light btn-social" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
@@ -57,25 +57,30 @@
                     
                     <!-- Otras columnas -->
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="text-light mb-4">Breast Cancer Guide</h4>
-                        <a class="btn btn-link" href="#">Breast Cancer Types</a>
+                        <h4 class="text-light mb-4">La clínica</h4>
+                        <a class="btn btn-link" href="/tratamientos">Tratamientos</a>
+                        <a class="btn btn-link" href="/casos-de-exito">Casos de éxito</a>
+                        <a class="btn btn-link" href="/preguntas">Preguntas frecuentes</a>
+                        <a class="btn btn-link" href="/contacto">Contacto</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="text-light mb-4">Related to Breast</h4>
-                        <a class="btn btn-link" href="#">Control Cancer Risk</a>
+                        <h4 class="text-light mb-4">Bienestar y salud</h4>
+                        <a class="btn btn-link" href="/tratamientos">Abordaje Integral</a>
+                        <a class="btn btn-link" href="/tratamientos">Patologías asociadas</a>
+                        <a class="btn btn-link" href="/tratamientos">Rehabilitación</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="text-light mb-4">Newsletter</h4>
-                        <p>Reciba nuestro boletín informativo sobre el cáncer de mama</p>
+                        <p>Reciba nuestro boletín informativo sobre obesidad y bienestar</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <form id="newsletter-form" novalidate class="row">
                                 <div class="input-field mb-2">
                                     <input id="email" class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email"
-                                        placeholder="Your email address" required>
+                                        placeholder="Su correo electrónico" required>
                                 </div>
                                 <div class="input-field">
                                     <button type="submit"
-                                        class="btn btn-primary w-100 py-3">Sign Up</button>
+                                        class="btn btn-primary w-100 py-3">Suscribirse</button>
                                 </div>
                             </form>
                         </div>

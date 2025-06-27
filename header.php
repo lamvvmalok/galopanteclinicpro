@@ -16,11 +16,11 @@
 
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <title>Believe - Breast Cancer And Women Health Medical Center </title>
+    <title>La clínica</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<?php wp_head(); ?>
     <!-- >>>Favicon>>> -->
-    <link href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" rel="icon">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" rel="icon" type="image/png">
     <!-- >>>Google Web Fonts>>> -->
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
@@ -36,6 +36,32 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- >>> main css Stylesheet>>> -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css?ver=<?php echo filemtime(get_stylesheet_directory() . '/css/style.css'); ?>" rel="stylesheet">
+
+    <style>
+    /* Responsive navbar: scroll horizontal y ajuste de fuente */
+    @media (max-width: 991.98px) {
+        .navbar-nav {
+            flex-wrap: nowrap !important;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            font-size: 1rem;
+            gap: 0.5rem;
+        }
+        .navbar-nav .nav-link {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            font-size: 1rem !important;
+        }
+    }
+    @media (max-width: 600px) {
+        .navbar-nav .nav-link {
+            font-size: 0.95rem !important;
+            padding-left: 0.7rem !important;
+            padding-right: 0.7rem !important;
+        }
+    }
+    </style>
 
 </head>
 
@@ -71,14 +97,10 @@
                         <small>(598) 098 479 685</small>
                     </div>
                     <div class="h-100 d-inline-flex align-items-center">
-                        <a class="btn bg-light1  btn-sm-square text-color me-1" href="index.html"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a class="btn bg-light1  btn-sm-square  text-color me-1" href="index.html"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a class="btn bg-light1 btn-sm-square text-color me-1" href="index.html"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a class="btn bg-light1 btn-sm-square text-color me-0" href="index.html"><i
-                                class="fa-brands fa-instagram"></i></a>
+                        <a class="btn bg-light1  btn-sm-square text-color me-1" href="https://www.facebook.com/clibauruguay/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="btn bg-light1  btn-sm-square  text-color me-1" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="btn bg-light1 btn-sm-square text-color me-1" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="btn bg-light1 btn-sm-square text-color me-0" href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -97,10 +119,13 @@
         </button>
         <div class="Believebg navr collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="nav-item nav-link active">Home</a>
-                <a href="<?php echo esc_url(home_url('/tratamientos')); ?>" class="nav-item nav-link">Tratamientos</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="nav-item nav-link active">Inicio</a>
+                <a href="#" class="nav-item nav-link">Tratamientos</a>
+                <a href="#" class="nav-item nav-link">Quiénes somos</a>
+                <a href="#" class="nav-item nav-link">Nuestro equipo</a>
+
             </div>
-            <a href="quote.html" class=" Get py-4 px-lg-5 d-none d-lg-block">Obtenga una cotización<i
+            <a href="#" class=" Get py-4 px-lg-5 d-none d-lg-block">Agendá una consulta<i
                     class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
